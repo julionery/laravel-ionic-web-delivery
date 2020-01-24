@@ -1,0 +1,43 @@
+<ion-view>
+    <ion-nav-title>Confirmação</ion-nav-title>
+    <div class="bar bar-subheader">
+        <button class="button button-icon ion-reply" ng-click="openListCheckout()"></button>
+        <h2 class="title">Informações</h2>
+    </div>
+    <ion-content class="padding has-subheader">
+        <div class="list card">
+            <center><h2>
+                <span class="input-label">Total: R$ {{total.toFixed(2)}}</span>
+            </h2></center>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Tipo de Retirada:
+                </div>
+                <select ng-model="pedido.retirada" ng-change="showSelectValue(retirada)">
+                    <option ng-selected="true" value=0>Entrega</option>
+                    <option value=1>Balcão</option>
+                </select>
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Forma de Pagamento:
+                </div>
+                <select ng-model="pedido.pagamento" ng-change="showSelectValue(pagamento)">
+                    <option ng-selected="true" value=0>Dinheiro</option>
+                    <option value=1>Cartão</option>
+                </select>
+            </label>
+            <i ng-show="pedido.pagamento==0">
+                <label class="item item-input"></label>
+                <ion-toggle ng-model="statusTroco" toggle-class="toggle-positive">Troco?</ion-toggle>
+                <label ng-show="statusTroco" class="item item-input">
+                    <span class="input-label">Troco para: </span>
+                    <input type="number" placeholder="..." ng-model="pedido.troco"/>
+                </label>
+            </i>
+            <button type="button" class="button button-assertive button-full" ng-click="save()">
+                Finalizar Pedido
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

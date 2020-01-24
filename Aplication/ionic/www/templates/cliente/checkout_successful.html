@@ -1,0 +1,39 @@
+<ion-view>
+    <ion-nav-title>Pedido realizado com sucesso!</ion-nav-title>
+    <div class="bar bar-dark bar-subheader">
+        <h2 class="title">Total: R$ {{total.toFixed(2)}}</h2>
+    </div>
+    <ion-content class="padding has-subheader">
+        <ion-list>
+            <ion-item  class="item-balanced" ng-show="cupom.valor != null">
+                  <strong>Cupom</strong>
+                <span class="badge badge-balanced">- R$ {{cupom.valor}} </span>
+            </ion-item>
+            <ion-item ng-repeat="o in items">
+                <h2>
+                    {{o.nome}}
+                    <i ng-if="o.tamanho=='B'"> - Broto</i>
+                    <i ng-if="o.tamanho=='P'"> - Pequena</i>
+                    <i ng-if="o.tamanho=='M'"> - Media</i>
+                    <i ng-if="o.tamanho=='G'"> - Grande</i>
+                </h2>
+                <div class="row">
+                    <div class="col">
+                        Qtd: {{o.qtd}}<br>
+                        <i class="ion ion-cash"> {{o.preco}}</i><br>
+                        <i ng-if="o.obs!=null">Obs: {{o.obs}}</i>
+                        <p ng-if="o.nomesAdicionados!='' && o.nomesAdicionados!=null"><i style="color: red">+</i>{{o.nomesAdicionados}}</p>
+                        <p ng-if="o.nomesRemovidos!='' && o.nomesRemovidos!=null"><i style="color: green">-</i>{{o.nomesRemovidos}}</p>
+                        <i ng-show="o.meia==1">Tipo: <i style="color: darkorange">Meia</i></i>
+                    </div>
+                    <div class="col text-right">
+                            <i class="ion ion-social-usd"> {{o.subtotal}}</i>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+        <button type="button" class="button button-royal button-full" ng-click="openListPedido()">
+            Ver meus Pedidos
+        </button>
+    </ion-content>
+</ion-view>

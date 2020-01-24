@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-nav-title>Empresa</ion-nav-title>
+    <div class="bar bar-subheader">
+        <button class="button button-icon ion-reply" ng-click="openListEmpresas()"></button>
+        <h2 class="title">Informações da empresa</h2>
+    </div>
+    <ion-content class="padding has-subheader">
+        <ion-item>
+            <h1 ng-if="empresa.status==0" class="assertive"><i class="ion-briefcase"> {{empresa.nome_fantasia}}</i></h1>
+            <h1 ng-if="empresa.status==1" class="balanced"><i class="ion-briefcase"> {{empresa.nome_fantasia}}</i></h1>
+            Telefone: {{empresa.telefone}}<br>
+            Endereço: {{empresa.endereco}}<br>
+            Bairro: {{empresa.bairro}}<br>
+            Cidade: {{empresa.cidade}}<br>
+            Estado: {{empresa.estado}}<br>
+            CEP: {{empresa.cep}}<br><br>
+            <center>
+                <ion-item>
+                    Horário de Funcionamento: <br>
+                    De {{empresa.abertura}} até as {{empresa.fechamento}}<br><br>
+
+                    Status:
+                    <i ng-if="empresa.status==0" class="assertive">Fechado</i>
+                    <i ng-if="empresa.status==1" class="balanced">Aberto</i>
+                </ion-item>
+            </center>
+        </ion-item>
+    </ion-content>
+</ion-view>

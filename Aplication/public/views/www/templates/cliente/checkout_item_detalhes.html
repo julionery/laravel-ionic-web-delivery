@@ -1,0 +1,69 @@
+<ion-view>
+    <ion-nav-title>Produto: {{produto.nome}}</ion-nav-title>
+    <div class="bar bar-subheader">
+        <button class="button button-icon ion-reply" ng-click="openListCheckout()"></button>
+        <h2 class="title">Detalhes do Produto</h2>
+    </div>
+    <ion-content class="padding has-subheader">
+        <div class="list card">
+            <div class="item">
+                <div class="row">
+                    <div class="col" ng-show="(produto.adicionar!='') && (produto.adicionar!=null)">
+                        <p>Adicionados:</p>
+                        <p ng-repeat="adicionados in produto.itensAdicionados">
+                            <i style="color: red">+</i> {{adicionados}}<br>
+                        </p>
+                        <br>
+                    </div>
+                    <div class="col" ng-show="produto.remover!='' && produto.remover!=null">
+                        <p>Removidos:</p>
+                        <p ng-repeat="removidos in produto.itensRemovidos">
+                            <i style="color: green">-</i> {{removidos}}<br>
+                        </p>
+                    </div>
+                </div>
+                Qtd: {{produto.qtd}}
+                <i ng-show="produto.meia=='1'" ng-if="produto.qtd!=0"> = {{(produto.preco*produto.qtd)/2}} R$</i>
+                <i ng-show="produto.meia!='1'" ng-if="produto.qtd!=0"> = {{produto.preco * produto.qtd}} R$</i>
+            </div>
+            <label class="item item-input">
+                <span class="input-label">Quantidade:</span>
+                <input type="number" placeholder="Forneça a quantidade!" ng-model="produto.qtd"/>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Observação:</span>
+                <input type="text" placeholder="..." ng-model="produto.obs"/>
+            </label>
+            <label ng-show="tipoProduto" class="item item-input item-select">
+                <div class="input-label">
+                    Tipo:
+                </div>
+                <select ng-model="produto.meia" ng-change="showSelectValue(meia)">
+                    <option value=0>Inteira</option>
+                    <option value=1>Meia</option>
+                </select>
+            </label>
+            <div class="row">
+                <div ng-show="produto.permiteAdicionais==1" class="col">
+                    <button type="button" class="button button-positive button-full" ng-click="openListAdicionais()">Adcionar</button>
+                </div>
+                <div ng-show="produto.componentes.data!=''" class="col">
+                    <button type="button" class="button button-assertive button-full" ng-click="openListRemove()">Remover</button>
+                </div>
+            </div>
+
+            <button type="button" class="button button-balanced button-full" ng-click="updateItem()">Alterar</button>
+            <div class="item item-body">
+                <h2>Descrição</h2>
+                <p>{{produto.descricao}}</p>
+                <h2 ng-if="produto.tamanho!='' && produto.tamanho!='N'">
+                    Tamanho:
+                    <p ng-if="produto.tamanho=='B'"> Broto - 2 Pedaços</p>
+                    <p ng-if="produto.tamanho=='P'"> Pequena - 4 Pedaços</p>
+                    <p ng-if="produto.tamanho=='M'"> Media - 6 Pedaços</p>
+                    <p ng-if="produto.tamanho=='G'"> Grande - 8 Pedaços</p>
+                </h2>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

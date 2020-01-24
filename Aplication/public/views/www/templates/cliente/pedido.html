@@ -1,0 +1,30 @@
+<ion-view>
+    <ion-nav-title>Meus Pedidos</ion-nav-title>
+    <ion-content class="padding has-header">
+        <ion-refresher pulling-text="Puxe para atualizar..." on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <div class="item item-divider">Total de pedidos: {{totalItems}}</div>
+            <ion-item  collection-repeat="o in items" ng-click="openOrderDetail(o)" on-hold="showActionSheet(o)">
+                <div class="row">
+                    <div class="col">
+                        <h2><i class="icon ion-information-circled positive"></i> #{{o.id}} - {{o.created_at.date|limitTo: 10|date:'dd/MM/yyyy'}} - {{o.created_at.date.slice(11,16)}}</h2>
+                        <p>{{o.produto_nomes| limitTo: 2| join: ', '}}</p>
+                        <i ng-show="o.produto_nomes.length != 1" class="ion ion-ios-cart"> {{o.produto_nomes.length}} Itens</i>
+                        <i ng-show="o.produto_nomes.length == 1" class="ion ion-ios-cart"> {{o.produto_nomes.length}} Item</i>
+                    </div>
+                    <div class="col text-right">
+                        <i class="ion ion-social-usd"> {{o.total}}</i><br><br>
+                        <i ng-show="o.status == 0" > Pendente</i>
+                        <i ng-show="o.status == 1" style="color: #fed22f"> Recebido</i>
+                        <i ng-show="o.status == 2" style="color: #df8a13"> Em preparação</i>
+                        <i ng-show="o.status == 3" style="color: green"> A caminho</i>
+                        <i ng-show="o.status == 4" style="color: blue"> Entregue</i>
+                        <i ng-show="o.status == 5" style="color: red"> Cancelado</i>
+                    </div>
+                </div>
+
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll ng-if="canMoreItems" on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

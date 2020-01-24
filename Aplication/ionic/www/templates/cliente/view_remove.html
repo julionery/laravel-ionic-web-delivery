@@ -1,0 +1,15 @@
+<ion-view>
+    <ion-nav-title>Remover</ion-nav-title>
+    <div class="bar bar-subheader">
+        <button class="button button-icon ion-reply" ng-click="openListCheckoutDetalhes()"></button>
+        <h2 class="title">Escolha os itens para remover!</h2>
+    </div>
+    <ion-content class="padding has-subheader">
+        <ion-list>
+            <ion-checkbox name="ingredientes[]" ng-value="{{o.id}}" ng-repeat="o in componentes.data">
+                    {{o.nome}}
+            </ion-checkbox>
+                <button type="button" class="button button-balanced button-full" ng-click="save()">Alterar</button>
+        </ion-list>
+    </ion-content>
+</ion-view>

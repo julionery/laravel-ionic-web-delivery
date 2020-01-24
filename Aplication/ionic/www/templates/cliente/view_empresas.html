@@ -1,0 +1,22 @@
+<ion-view>
+    <ion-nav-title>Nossas Empresas</ion-nav-title>
+    <div class="bar bar-subheader">
+        <h2 class="title">Escolha uma empresa!</h2>
+    </div>
+    <ion-content class="padding has-subheader">
+        <ion-refresher pulling-text="Puxe para atualizar..." on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <ion-item ng-show="o.id!=1" class="item-icon-right" ng-repeat="o in empresas" ng-click="openCategorias(o)">
+                {{o.nome_fantasia}}
+                <br>
+                {{o.telefone}}
+                <i ng-if="statusEmpresa(o)==0" class="icon ion-close-circled assertive"></i>
+                <i ng-if="statusEmpresa(o)==1" class="icon ion-checkmark-circled balanced"></i>
+
+                <ion-option-button class="button-positive" ng-click="openEmpresaDetalhes(o)">
+                    <i class="icon ion-information-circled"></i>
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

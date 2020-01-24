@@ -1,0 +1,46 @@
+<ion-view>
+    <ion-nav-title>{{categoria.nome}}</ion-nav-title>
+    <div class="bar bar-subheader">
+        <button class="button button-icon ion-reply" ng-click="openListCategorias()"></button>
+        <h2 class="title">Escolha o seu produto!</h2>
+    </div>
+    <ion-content class="padding has-subheader">
+        <ion-list>
+            <ion-toggle ng-show="broto" class="button button-outline button-full button-positive" ng-model="ngBroto" toggle-class="toggle-positive">Broto</ion-toggle>
+                <ion-item ng-show="ngBroto" ng-if="o.empresa_id==empresa.id && o.tamanho=='B'" ng-repeat="o in produtos" ng-click="addItem(o)">
+                    {{o.nome}}
+                <span class="item-note">
+                    <i class="ion ion-cash"> {{ o.preco }}</i>
+                </span>
+                </ion-item>
+
+            <ion-toggle ng-show="pequena"class="button button-outline button-full button-calm" ng-model="ngPequena" toggle-class="toggle-calm">Pequena</ion-toggle>
+            <ion-item ng-show="ngPequena" ng-if="o.empresa_id==empresa.id && o.tamanho=='P'" ng-repeat="o in produtos" ng-click="addItem(o)">
+                {{o.nome}}
+                <span class="item-note">
+                    <i class="ion ion-cash"> {{ o.preco }}</i>
+                </span>
+            </ion-item>
+            <ion-toggle ng-show="media" class="button button-outline button-full button-dark"  ng-model="ngMedia" toggle-class="toggle-dark">Média</ion-toggle>
+            <ion-item ng-show="ngMedia" ng-if="o.empresa_id==empresa.id && o.tamanho=='M'" ng-repeat="o in produtos" ng-click="addItem(o)">
+                {{o.nome}}
+                <span class="item-note">
+                    <i class="ion ion-cash"> {{ o.preco }}</i>
+                </span>
+            </ion-item>
+            <ion-toggle ng-show="grande" class="button button-outline button-full button-royal"  ng-model="ngGrande" toggle-class="toggle-royal">Grande</ion-toggle>
+            <ion-item ng-show="ngGrande" ng-if="o.empresa_id==empresa.id && o.tamanho=='G'" ng-repeat="o in produtos" ng-click="addItem(o)">
+                {{o.nome}}
+                <span class="item-note">
+                    <i class="ion ion-cash"> {{ o.preco }}</i>
+                </span>
+            </ion-item>
+            <ion-item ng-if="o.empresa_id==empresa.id && (o.tamanho=='N' || o.tamanho=='')" ng-repeat="o in produtos" ng-click="addItem(o)">
+                {{o.nome}}
+                <span class="item-note">
+                    <i class="ion ion-cash"> {{ o.preco }}</i>
+                </span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

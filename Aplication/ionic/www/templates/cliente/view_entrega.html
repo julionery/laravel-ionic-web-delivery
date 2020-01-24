@@ -1,0 +1,44 @@
+<ion-view>
+    <ion-nav-title>Pedido: #{{pedido.id}}</ion-nav-title>
+    <div class="bar bar-subheader">
+        <h2 class="title">#{{pedido.id}} - Total: R$ {{pedido.total}}</h2>
+    </div>
+    <ion-content class="padding has-subheader">
+        <div class="item item-divider">
+            Empresa: {{pedido.empresa.data.nome_fantasia}}<br>
+            Data da compra: {{pedido.created_at.date|limitTo: 10|date:'dd/MM/yyyy'}} - {{pedido.created_at.date.slice(11,16)}}<br>
+                <i ng-show="pedido.pagamento=='0'">Forma de pagamento: Dinheiro<br></i>
+                <i ng-show="pedido.pagamento=='1'">Forma de pagamento: Cartão<br></i>
+                <i ng-show="pedido.pagamento=='2'">Forma de pagamento: Cheque<br></i>
+        </div>
+
+        <ui-gmap-google-map center="map.center" zoom="map.zoom" bounds="map.bounds">
+            <ui-gmap-map-control template="button-descentralize.html" position="top-right"
+                                 controller="CveControlDescentralize" index="-1">
+            </ui-gmap-map-control>
+            <ui-gmap-map-control template="button-reload.html" position="top-right"
+                                 controller="CveControlReload" index="-1">
+            </ui-gmap-map-control>
+            <ui-gmap-markers models="markers" coords="'coords'" options="'options'" fit="map.fit">
+            </ui-gmap-markers>
+        </ui-gmap-google-map>
+
+    </ion-content>
+</ion-view>
+
+<script id="button-descentralize.html" type="text/ng-template">
+    <button class="button button-stable" ng-click="fit()">
+        <i class="ion" ng-class="{'ion-model-s': !map.fit, 'ion-stop': map.fit}"></i>
+    </button>
+</script>
+<script id="button-reload.html" type="text/ng-template">
+    <button class="button button-stable" ng-click="reload()">
+        <i class="ion ion-refresh"></i>
+    </button>
+</script>
+
+<style type="text/css">
+    .angular-google-map-container {
+        height: 400px;
+    }
+</style>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - webdelivery@localhost" uuid="6bf4ebf2-8157-4686-b40b-19f014d59fab">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>webdelivery.*</schema-pattern>
+      <default-schemas>webdelivery.*</default-schemas>
+    </data-source>
+  </component>
+</project>

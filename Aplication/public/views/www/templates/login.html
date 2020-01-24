@@ -1,0 +1,31 @@
+<ion-view>
+    <ion-nav-bar class="bar bar-positive">
+        <ion-nav-title> Os PrintF - Login</ion-nav-title>
+    </ion-nav-bar>
+    <ion-content class="padding">
+        <form name="form" ng-submit="login()" scroll="false">
+
+            <div style="height: 40px;" class="spacer"></div>
+            <div class="">
+                <img style="display: block; margin-left: auto; margin-right: auto;" src="img/logo.png"
+                     height="auto" width="100%">
+            </div>
+            <div style="height: 40px;" class="spacer"></div>
+
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" name="username" ng-model="user.username" placeholder="Digite seu usuário" required="required"/>
+                </label>
+            </div>
+
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="password" name="password" ng-model="user.password" placeholder="Digite sua senha" required="required"/>
+                </label>
+            </div>
+
+            <button type="submit" class="button button-assertive button-block">Entrar</button>
+
+        </form>
+    </ion-content>
+</ion-view>

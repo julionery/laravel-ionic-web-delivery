@@ -1,0 +1,44 @@
+<div class="bar bar-header bar-positive">
+    <h1 class="title">Cadastro</h1>
+</div>
+<ion-content class="padding has-header">
+    <form name="form" ng-submit="save()">
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Nome</span>
+                <input ng-model="user.nome" type="text" placeholder="..." required="required">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Email</span>
+                <input ng-model="user.email" type="text" placeholder="exemplo@exemplo.com" required="required">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Telefone</span>
+                <input ng-model="user.telefone" type="text" placeholder="(00) 00000-0000" required="required">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Senha</span>
+                <input ng-model="user.senha" type="password" placeholder="******" required="required">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Confirme sua senha</span>
+                <input ng-model="user.confirmSenha" type="password" placeholder="******" required="required">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">CEP</span>
+                <input ng-model="user.cep" type="text" placeholder="00000-000" required="required">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Endereço</span>
+                <input ng-model="user.endereco" type="text" placeholder="Av: ..." required="required">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Bairro</span>
+                <input ng-model="user.bairro" type="text" placeholder="Centro" required="required">
+            </label>
+        </div>
+        <button type="submit" class="button button-block button-positive">
+            Salvar
+        </button>
+    </form>
+</ion-content>

@@ -1,0 +1,79 @@
+<ion-view>
+    <ion-nav-title>Pedido: #{{pedido.id}}</ion-nav-title>
+    <div class="bar bar-subheader">
+        <button class="button button-icon ion-reply" ui-sref="entregador.pedido"></button>
+        <h2 class="title">#{{pedido.id}} - Total: R$ {{pedido.total}}</h2>
+    </div>
+    <ion-content class="padding has-subheader">
+        <div class="item item-divider">
+            Data da compra: {{pedido.created_at.date|limitTo: 10|date:'dd/MM/yyyy'}} - {{hora}}
+        </div>
+        <ion-list>
+            <ion-item ng-repeat="item in pedido.items.data">
+                <h2>
+                    {{item.produtos.data.nome}}
+                    <i ng-show="o.tamanho=='B'"> - Broto</i>
+                    <i ng-show="o.tamanho=='P'"> - Pequena</i>
+                    <i ng-show="o.tamanho=='M'"> - Media</i>
+                    <i ng-show="o.tamanho=='G'"> - Grande</i>
+                </h2>
+                <div class="row">
+                    <div class="col">
+                        Qtd:{{item.qtd}}<br>
+                        <i class="ion ion-cash"> {{item.preco}}</i><br>
+                        <i ng-show="item.obs!=''">Obs: {{item.obs}}<br></i>
+                        <i ng-show="item.meia!=null">Tipo:
+                            <i ng-show="item.meia=='0'">Inteira</i>
+                            <i ng-show="item.meia=='1'">Meia</i>
+                        </i>
+                    </div>
+                    <div class="col text-right">
+                        <i class="ion ion-social-usd"> {{item.qtd * item.preco}}</i>
+                    </div>
+                </div>
+            </ion-item>
+
+            <div class="item item-divider">
+
+                <i class="royal"> Entregar para: {{pedido.cliente.data.user.data.nome}}<br></i>
+                Telefone: {{pedido.cliente.data.telefone}}<br>
+                Endereço: {{pedido.cliente.data.endereco}}<br>
+                CEP: {{pedido.cliente.data.cep}}<br>
+                Bairro: {{pedido.cliente.data.bairro}} - {{pedido.cliente.data.cidade}} - {{pedido.cliente.data.estado}}<br><br>
+
+                <i ng-show="pedido.pagamento=='0'">Forma de pagamento: Dinheiro<br></i>
+                <i ng-show="pedido.pagamento=='1'">Forma de pagamento: Cartão<br></i>
+                <i ng-show="pedido.pagamento=='2'">Forma de pagamento: Cheque<br></i>
+                <i ng-show="pedido.retirada=='0'">Modelo de retirada: Entrega<br></i>
+                <i ng-show="pedido.retirada=='1'">Modelo de retirada: Balcão<br></i>
+
+                <div class="text-center">
+                    <br>
+                    <i ng-show="pedido.status == 0" style="color: red">Status: Pendente.</i>
+                    <i ng-show="pedido.status == 1" style="color: #fed22f">Status: Recebido!</i>
+                    <i ng-show="pedido.status == 2" style="color: #df8a13">Status: Em preparação!</i>
+                    <i ng-show="pedido.status == 3" style="color: green">Status: A caminho!</i>
+                    <i ng-show="pedido.status == 4" style="color: blue">Status: Entregue!</i>
+                    <i ng-show="pedido.status == 5">Status: Cancelado!</i>
+                </div>
+            </div>
+        </ion-list>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="button button-positive button-full" ng-click="goToDelivery()">
+                    <i class="ion ion-model-s"></i>
+                </button>
+            </div>
+            <div class="col">
+                <button type="button" class="button button-energized button-full" ng-click="goPush()">
+                    <i class="ion ion-alert"></i>
+                </button>
+            </div>
+            <div class="col">
+                <button type="button" class="button button-balanced button-full" ng-click="entregaRealizada()">
+                    <i class="ion ion-checkmark-circled"></i>
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
