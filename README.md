@@ -1,5 +1,6 @@
-# WebDelivery
-Projeto Final de Curso utilizando PHP+Laravel+Ionic+Angular+Cordova
+<h2 align="center">WebDelivery</h2>
+
+Projeto Final de Curso utilizando PHP+Laravel+Ionic+Angular+Cordova.
 
 À princípio, foram identificados problemas, os quais justificam a elaboração do
 projeto, tais como atraso e falhas no atendimento, falta de informações sobre os
@@ -22,6 +23,26 @@ ao aplicativo, ler cupom de desconto via QR-Code e receber as notificações sob
 Essa etapa foi muito desgastante, devido à complexidade para realizar a manipulação das
 informações entre as plataformas, realização dos tratamentos de exceções e regras de negócio
 demandarem esforço e tempo.
+
+### :rocket: Tecnologias:
+- [PHP](https://www.php.net/)
+- [Laravel](https://laravel.com/)
+- [MySQL](https://www.mysql.com/)
+- [Ionic](https://ionicframework.com/)
+- [Angular](https://angular.io/)
+
+### :briefcase: Arquitetura: 
+ - [MVC - Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+
+### :books: Ferramentas e componentes:
+- [NPM](https://nodejs.org/en/)
+- [Composer](https://getcomposer.org/)
+- [Migrations](https://laravel.com/docs/7.x/migrations)
+- [Seeds](https://laravel.com/docs/7.x/seeding)
+- [Pusher](https://pusher.com/channels?campaignid=916184871&utm_source=adwords&utm_medium=cpc&utm_campaign=Brand_Pusher_Exact&utm_term=pusher&utm_creative=265000529656&gclid=Cj0KCQjwoPL2BRDxARIsAEMm9y8zTkQWAp1DUMIWodwvN49q-EPZWARtXyXfmhxPa-3u9XFB-3xWvMAaAiyCEALw_wcB)
+- [JWT- JSON Web Tokens](https://jwt.io/)
+
+<h2 align="center">Demonstração</h2>
 
 ![Image of WebService](https://github.com/JulioNery/WebDelivery/blob/master/imagetcc2.PNG?raw=true)
 
