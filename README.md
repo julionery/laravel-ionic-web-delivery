@@ -1,13 +1,14 @@
 <h1 align="center">WebDelivery</h1>
+<h3 align="center">Sistema de gestão de entregas para pizzarias utilizando as plataformas web e mobile em <br />Rio Verde - GO.</h3>
 
-### Sistema de gestão de entregas para pizzarias utilizando as plataformas web e mobile em Rio Verde - GO.
-### :mortar_board: Projeto Final de Curso utilizando PHP+Laravel+Ionic+Angular+Cordova.
+<h3 align="center"> :mortar_board: Projeto Final de Curso utilizando PHP+Laravel+Ionic+Angular+Cordova.</h3>
 
 # Índice
 
 - [Sobre](#sobre)
 - [Documentação](#documentacao)
-- [Resultado](#resultado)
+- [Aplicação Web](#web)
+- [Aplicação Mobile](#mobile)
 - [Testes](#testes)
 
 ## Sobre
@@ -72,23 +73,46 @@ demandarem esforço e tempo.
 
 ## Resultado
 
-![Image of WebService](https://github.com/JulioNery/WebDelivery/blob/master/imagetcc2.PNG?raw=true)
+<a id="web"></a>
 
-![Image of App](https://github.com/JulioNery/WebDelivery/blob/master/imagetcc.PNG?raw=true)
+### Aplicação Web
+![](https://github.com/julionery/docs/blob/master/WebDelivery/home.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/login.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/registro.png?raw=true)
+#### Painel Administrativo
+#### Usuário:
+![](https://github.com/julionery/docs/blob/master/WebDelivery/pedidos.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/perfil.png?raw=true)
+
+#### Administrativo:
+![](https://github.com/julionery/docs/blob/master/WebDelivery/empresas.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/cadastro-empresa.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/relatorios.png?raw=true)
+
+<a id="mobile"></a>
+
+### Aplicação Mobile
+
+
+#### Push Notification e E-mail:
+
+<h3 align="center">
+<img width="300px" src="https://github.com/julionery/docs/blob/master/WebDelivery/push.png?raw=true">
+<img width="300px" src="https://github.com/julionery/docs/blob/master/WebDelivery/email.png?raw=true">
+</h3>
 
 ## Testes
 ### Unitário:
-![](https://github.com/julionery/docs/blob/master/WeDelivery/unitario.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/unitario.png?raw=true)
 
 ### Funcional:
-![](https://github.com/julionery/docs/blob/master/WeDelivery/funcional.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/funcional.png?raw=true)
 
 ### Estresse:
-![](https://github.com/julionery/docs/blob/master/WeDelivery/stress.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/stress.png?raw=true)
 
 ### Análise Estática:
-![](https://github.com/julionery/docs/blob/master/WeDelivery/estatica.png?raw=true)
-
+![](https://github.com/julionery/docs/blob/master/WebDelivery/estatica.png?raw=true)
 
 ---
 
