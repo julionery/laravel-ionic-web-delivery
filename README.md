@@ -1,3 +1,6 @@
+<h3 align="center">
+    <img alt="Logo" title="#logo" width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/laravel-angular-ionic.png?raw=true">
+</h3>
 <h1 align="center">WebDelivery</h1>
 <h3 align="center">Sistema de gestão de entregas para pizzarias utilizando as plataformas web e mobile em <br />Rio Verde - GO.</h3>
 
