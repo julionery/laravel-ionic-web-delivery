@@ -76,6 +76,8 @@ demandarem esforço e tempo.
 <a id="web"></a>
 
 ### Aplicação Web
+
+
 ![](https://github.com/julionery/docs/blob/master/WebDelivery/home.png?raw=true)
 ![](https://github.com/julionery/docs/blob/master/WebDelivery/login.png?raw=true)
 ![](https://github.com/julionery/docs/blob/master/WebDelivery/registro.png?raw=true)
@@ -88,17 +90,71 @@ demandarem esforço e tempo.
 ![](https://github.com/julionery/docs/blob/master/WebDelivery/empresas.png?raw=true)
 ![](https://github.com/julionery/docs/blob/master/WebDelivery/cadastro-empresa.png?raw=true)
 ![](https://github.com/julionery/docs/blob/master/WebDelivery/relatorios.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/pedidos-web.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/pedidos-web-2.png?raw=true)
+![](https://github.com/julionery/docs/blob/master/WebDelivery/pedidos-web-3.png?raw=true)
 
 <a id="mobile"></a>
 
 ### Aplicação Mobile
 
 
+### Área do Usuário:
+#### Pedidos:
+
+<h3 align="center">
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/app-usuario-1.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/app-usuario-2.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/app-usuario-3.png?raw=true">
+</h3>
+
+<h3 align="center">
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/app-usuario-4.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/empresa-1.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/empresa-2.png?raw=true">
+</h3>
+
+<h3 align="center">
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/empresa-3.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/empresa-4.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/empresa-5.png?raw=true">
+</h3>
+
+#### Carrinho de Compra:
+
+<h3 align="center">
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/cart-1.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/cart-2.png?raw=true">
+</h3>
+
+#### Detalhes do Pedido:
+
+<h3 align="center">
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/cart-4.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/cart-adicionais-1.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/cart-adicionais-2.png?raw=true">
+</h3>
+
+#### Cupons de Desconto: 
+
+<h3 align="center">
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/cupom-1.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/cupom-2.png?raw=true">
+</h3>
+
+#### Área do Entregador: 
+
+<h3 align="center">
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/entregador-1.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/entregador-2.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/entregador-3.png?raw=true">
+</h3>
+
 #### Push Notification e E-mail:
 
 <h3 align="center">
-<img width="300px" src="https://github.com/julionery/docs/blob/master/WebDelivery/push.png?raw=true">
-<img width="300px" src="https://github.com/julionery/docs/blob/master/WebDelivery/email.png?raw=true">
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/push.png?raw=true">&nbsp;&nbsp;
+<img width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/email.png?raw=true">
 </h3>
 
 ## Testes
