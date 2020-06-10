@@ -13,6 +13,8 @@
 - [Aplicação Web](#web)
 - [Aplicação Mobile](#mobile)
 - [Testes](#testes)
+- [Como Contribuir](#contribuir)
+- [Licenca](#licenca)
 
 ## Sobre
 
@@ -172,6 +174,22 @@ demandarem esforço e tempo.
 
 ### Análise Estática:
 ![](https://github.com/julionery/docs/blob/master/WebDelivery/estatica.png?raw=true)
+
+<a id="contribuir"></a>
+
+## :link: Como contribuir
+
+- Faça um Fork do repositório,
+- Faça um clone do respositório
+- Crie uma branch com a sua feature
+- Faça um commit com suas mudanças
+- Push a sua branch
+- Ir em Pull Requests do projeto original e criar uma pull request com o seu commit
+
+<a id="licenca"></a>
+
+## :memo: Licença
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
