@@ -1,27 +1,56 @@
-## Laravel PHP Framework
+<h3 align="center">
+    <img alt="Logo" title="#logo" width="250px" src="https://github.com/julionery/docs/blob/master/WebDelivery/laravel-angular-ionic.png?raw=true">
+</h3>
+<h1 align="center">WebDelivery</h1>
+<h3 align="center">Sistema de gestão de entregas para pizzarias utilizando as plataformas web e mobile em <br />Rio Verde - GO.</h3>
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+<h3 align="center"> :mortar_board: Projeto Final de Curso utilizando PHP+Laravel+Ionic+Angular+Cordova.</h3>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+#### Documento - [Monografia](https://github.com/julionery/laravel-ionic-web-delivery/blob/master/Monografia_J%C3%BAlioC%C3%A9sarAlmeidaNery_2016-02.pdf)
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+### :rocket: Tecnologias:
+- HTML, CSS, JS
+- Bootstrap
+- [PHP](https://www.php.net/)
+- [Laravel](https://laravel.com/)
+- [MySQL](https://www.mysql.com/)
+- [Ionic](https://ionicframework.com/)
+- [Angular](https://angular.io/)
 
-## Official Documentation
+### :briefcase: Arquitetura e Design Patterns: 
+ - [MVC - Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+ - [Repository Pattern](https://cubettech.com/resources/blog/introduction-to-repository-design-pattern/)
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+### :books: Ferramentas e componentes:
+- [Gantt Project](https://www.ganttproject.biz/)
+- [Astah Community](https://astah.net/)
+- [NPM](https://nodejs.org/en/)
+- [Composer](https://getcomposer.org/)
+- [Migrations](https://laravel.com/docs/7.x/migrations)
+- [Seeds](https://laravel.com/docs/7.x/seeding)
+- [Pusher](https://pusher.com/channels?campaignid=916184871&utm_source=adwords&utm_medium=cpc&utm_campaign=Brand_Pusher_Exact&utm_term=pusher&utm_creative=265000529656&gclid=Cj0KCQjwoPL2BRDxARIsAEMm9y8zTkQWAp1DUMIWodwvN49q-EPZWARtXyXfmhxPa-3u9XFB-3xWvMAaAiyCEALw_wcB)
+- [JWT- JSON Web Tokens](https://jwt.io/)
+- [DOM PDF](https://github.com/dompdf/dompdf)
 
-## Contributing
+<a id="contribuir"></a>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## :link: Como contribuir
 
-## Security Vulnerabilities
+- Faça um Fork do repositório,
+- Faça um clone do respositório
+- Crie uma branch com a sua feature
+- Faça um commit com suas mudanças
+- Push a sua branch
+- Ir em Pull Requests do projeto original e criar uma pull request com o seu commit
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+<a id="licenca"></a>
 
-### License
+## :memo: Licença
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+---
+
+<h4 align="center">
+    Feito com ❤ por <a href="https://www.linkedin.com/in/julio-nery/" target="_blank">Júlio Nery</a>!
+    <g-emoji class="g-emoji" alias="wave" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png">👋</g-emoji>
+</h4>
